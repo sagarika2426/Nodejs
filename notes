@@ -1,0 +1,18 @@
+never use odd version of node - as they are just for experiments
+
+By writing Node in the code you can create REPL where you can execute any operations like console
+REPL
+Read
+Eval
+print
+Loop
+
+- How Module and Require is different from Import and export
+    To export and import files we need module patterns
+    For FE - import export - ECMAScript Modules (ESM)
+    For BE - Module and Require - common JS
+
+
+fs
+path
+os
