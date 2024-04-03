@@ -1,6 +1,7 @@
 
 const sum = (a,b) => a+b;
-//how can we use this sum in the math.js and perform the operation
+//how can we use this sum in the math.js and 
+//perform the operation
 
 //we cant do using import export in nodejs
 // so we will be using module and require

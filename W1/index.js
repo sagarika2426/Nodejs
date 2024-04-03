@@ -1,9 +1,9 @@
 // console.log("Hello")
 
-const {sum, sub, mul} = require("./math") // type - user generated module
+const {sum, sub, mul} = require("./math")//type - user generated module
 const isEven = require("is-even")//type - npm packages
 
-const os = require("os"); //type - core modules
+const os = require("os");//type - core modules
 console.log(os.cpus());
 
 // let result = sum (1,4);
