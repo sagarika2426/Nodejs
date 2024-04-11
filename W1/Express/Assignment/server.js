@@ -1,7 +1,11 @@
 const express = require("express");
 const app = express();
 const fs = require("fs")
+const cors = require("cors");
+
 app.use(express.json())
+app.use(cors());
+
 
 const todoString = fs.readFileSync(`${__dirname}/todo.json`, {
     encoding: "utf-8"
