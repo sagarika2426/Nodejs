@@ -27,9 +27,29 @@ UserRoute.get("/:id", async (req,res)=> {
 
 UserRoute.post("/", async (req,res)=> {
     //insertOne
-    //create and save
-    let user = await TestUser.create(req.body)
+    // let user = await TestUser.create(req.body)
+
+     //create and save
+     let user = new TestUser(req.body)
+     await user.save()
     res.send(user);
 })
+
+UserRoute.delete("/:id", async (req,res)=> {
+    //deleteOne
+    //findByIdAndDelete
+
+    try{
+        await TestUser.findOne({_id: req.params.id})
+        res.send("Deleted Successfully")
+    }
+    catch(e){
+        res.send(401).send(e.message)
+    }
+     
+})
+
+
+
 
 module.exports = UserRoute
