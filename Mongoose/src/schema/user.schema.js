@@ -7,15 +7,16 @@ const userSchema = new mongoose.Schema({
         type: String, 
         required: true,
         enum:["Male", "Female"]
-        },
-    balance: {type: String, required: false},
-    native: {type: String, required: true},
-    reloacte_to: {type: String, required: true},
-    family_members: {type: Number, required: false}
+        }
  
- })
+ },
+
+ {
+    versionKey: false
+ }
+)
 
  //to use schema we need Model
-const TestUser = mongoose.model("testuser", userSchema)
+const TestUser = mongoose.model("users", userSchema)
 
 module.exports = TestUser;
